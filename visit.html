@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Cafestage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cafestage</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="visit.html">Visit</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="visit-section">
+
+            <h2>Welcome to Cafestage</h2>
+
+            <p>
+                The stage is yours for a little while.
+                Choose how you'd like to visit us!
+            </p>
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXaFoPyyQeKNeR5-QXQp1ersMzBA4O2lwfWRbTz4bE3g&s=10"
+                alt="Cafestage decoration"
+                class="visit-gif"
+            >
+
+            <h3>How would you like to visit?</h3>
+
+            <div class="visit-options">
+
+                <button onclick="chooseVisit('Walk-in')">
+                    Walk-in
+                </button>
+
+                <button onclick="chooseVisit('Reservation')">
+                    Reservation
+                </button>
+
+            </div>
+
+            <div id="reservation-area"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

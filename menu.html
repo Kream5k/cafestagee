@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Cafestage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	
+	<!-- COLLAPSIBLE FLOATING MENU -->
+	
+	<div class="floating-widget">
+	
+	<button class="cafe-toggle" id="cafeToggle">
+	☕
+	</button>
+	
+	<div class="floating-panel" id="floatingPanel">
+	
+	<p class="floating-title">CAFE MENU ✦</p>
+	
+	<a href="#drinks">🥤 Drinks</a>
+	<a href="#snacks">🍰 Snacks</a>
+	
+	</div>
+	
+	</div>
+	
+    <header>
+        <h1>Cafestage</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="visit.html">Visit</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </header>
+
+    <main class="menu-section">
+
+        <h2>Our Alienieted Menu</h2>
+        <p>A little sweetness from another world.</p>
+
+        <nav class="menu-nav">
+            <a href="#drinks">Drinks</a>
+            <a href="#snacks">Snacks</a>
+        </nav>
+
+        <div class="menu-layout">
+
+            <section class="products-area">
+
+                <h2 id="drinks">✦ Drinks ✦</h2>
+
+                <div id="drink-list" class="product-grid"></div>
+                <img src="images/D1.png" alt="Test drink" width="200">
+
+                <h2 id="snacks">✦ Snacks ✦</h2>
+
+                <div id="snack-list" class="product-grid"></div>
+
+            </section>
+
+            <aside class="cart-area">
+
+                <h2>Your Cart</h2>
+
+                <div id="cart-items">
+                    <p>Your cart is empty.</p>
+                </div>
+
+                <hr>
+
+                <p>Subtotal: ₱<span id="subtotal">0.00</span></p>
+
+                <p>Preparation Time:
+                    <span id="prep-time">0</span> seconds
+                </p>
+
+                <h3>Total: ₱<span id="total">0.00</span></h3>
+
+                <button onclick="confirmOrder()">
+                    Confirm Order
+                </button>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    
+    <script>
+    const cafeToggle = document.getElementById("cafeToggle");
+    const floatingPanel = document.getElementById("floatingPanel");
+    
+    cafeToggle.addEventListener("click", function() {
+    floatingPanel.classList.toggle("show");
+    });
+    
+    // Close menu after selecting a section
+    document.querySelectorAll(".floating-panel a").forEach(link => {
+    link.addEventListener("click", function() {
+    floatingPanel.classList.remove("show");
+    });
+    });
+    </script>
+    
+
+</body>
+</html>

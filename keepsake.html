@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cafestage Keepsake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cafestage</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </header>
+
+    <main class="keepsake-section">
+
+        <h2>✦ Your Order Is Ready! ✦</h2>
+
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwvEL-hdGOyN39cnCpk8am7QAKbO8yeEYoRXxuk8s9Q&s=10"
+            alt="Your order is ready"
+            class="ready-gif"
+        >
+
+        <p class="keepsake-message">
+            Thank you for spending a little time with us.
+            We hope to see you again, somewhere beyond the stage.
+        </p>
+
+        <section class="receipt-card">
+
+            <h2>CAFESTAGE</h2>
+            <p>Customer Order Receipt</p>
+
+            <hr>
+
+            <p>Customer: <span id="receipt-name">Guest</span></p>
+            <p>Visit Type: <span id="receipt-visit">Walk-in</span></p>
+            <p>Table: <span id="receipt-table">Not selected</span></p>
+            <p>Date: <span id="receipt-date">-</span></p>
+
+            <hr>
+
+            <h3>Your Order</h3>
+
+            <div id="receipt-items"></div>
+
+            <hr>
+
+            <p>Preparation Time:
+                <span id="receipt-time">0</span> seconds
+            </p>
+
+            <h3>Total: ₱<span id="receipt-total">0.00</span></h3>
+
+            <p>Trivia Score:
+                <span id="receipt-score">0</span>
+            </p>
+
+            <hr>
+
+            <p>Thank you for choosing Cafestage!</p>
+
+        </section>
+
+
+        <!-- Creators -->
+
+        <section class="creators-section">
+
+            <h2>✦ Behind the Café ✦</h2>
+
+            <p>
+                Cafestage was brought to life by two creators
+                who wanted to create a little café beyond the stage.
+            </p>
+
+            <div class="creator-grid">
+
+                <div class="creator-card">
+                    <img src="images/rhi.jpg" alt="Rhianne">
+                    <h3>Rhianne Rys M. Mallorca</h3>
+                    <p>Creator</p>
+                    <a href="https://www.facebook.com/share/193NZaBHrD/" target="_blank">
+                        Facebook Profile
+                    </a>
+                </div>
+
+                <div class="creator-card">
+                    <img src="images/shan.jpg" alt="Shan">
+                    <h3>Marshan Karylle F. Llamado</h3>
+                    <p>Creator</p>
+                    <a href="https://www.facebook.com/share/1DGM4wyxJz/" target="_blank">
+                        Facebook Profile
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Envelope -->
+
+        <section class="letter-section">
+
+            <h2>A Little Letter for You</h2>
+
+            <div class="envelope" onclick="openLetter()">
+
+                <div class="envelope-icon">✉</div>
+
+                <p>Tap to open your letter</p>
+
+            </div>
+
+            <div id="letter-content" class="letter-content">
+
+                <h3>Dear Visitor,<br>
+                Thank You for Visiting Cafestage! ✦</h3>
+                
+
+                <p>
+                    Thank you for spending a little time with us at Cafestage!
+                    We hope this little corner gave you a moment to slow down, 
+                    enjoy something nice, and escape from the noise of the outside world. 
+                    Whether you came for a drink, a little company, or simply to explore, 
+                    we're happy to have had you here.
+                </p>
+                
+                <p> <b><i>Behind the Café</i></b><br>
+                Cafestage is a fan-made alternate universe inspired by <b>ALIEN STAGE</b>, 
+                reimagining its characters in a cozy café setting.
+                This is an independent, unofficial fan project created purely out of 
+                appreciation for the original series. It is not affiliated with, endorsed 
+                by, or sponsored by the original creators.
+                </p>
+                
+                <p> <b><i>Special Thanks</i></b><br>
+                To everyone who supported, inspired, and contributed to this project, 
+                thank you for helping bring Cafestage to life.
+                And to the original creators and artists behind <b>ALIEN STAGE</b>, 
+                thank you for creating a world that continues to inspire so many 
+                creative interpretations.
+                </p>
+
+                <p> <b><i>Credits</i></b><br>
+                    <b>ALIEN STAGE</b> is an original work by <i><b>VIVINOS</b></i> and <i><b>QMENG</b></i> 
+                    together with its contributing production team. All 
+                    rights to the original series, characters, music, 
+                    and official artwork belong to their respective copyright holders.
+                    All original Cafestage designs, website elements, 
+                    and independently created materials belong to their 
+                    respective creators.
+                </p>
+
+                <p> <b>Please support the original series and its creators!</b>
+               
+                Until our next cup, take care! ☕
+                </p>
+
+                <p>With love,</p>
+
+                <p><b>The Cafestage Creators ✦</b></p>
+
+            </div>
+
+        </section>
+
+        <button onclick="goHome()" class="home-button">
+            Return Home
+        </button>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Cafestage — A Fan-Made AU Project</p>
+        <p>Inspired by Alien Stage. All original characters and related rights belong to their respective owners.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
